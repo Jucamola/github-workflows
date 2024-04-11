@@ -94,7 +94,7 @@ jobs:
         with:
           node-version: ${{ inputs.nodeVersion }}
           cache: yarn
-      - uses: salesforcecli/github-workflows/.github/actions/yarnInstallWithRetries@main
+      - uses: Jucamola/github-workflows/.github/actions/yarnInstallWithRetries@main
       - run: yarn build
       - run: npm install -g @salesforce/plugin-release-management
 
